@@ -12,6 +12,12 @@ namespace AspNetCoreMVCWithWCF
     public interface IDemoService
     {
         [OperationContract]
-        void DoWork();
+        string Hello();
+
+        [OperationContract]
+        string Hi(string name);
+
+        [OperationContract]
+        int Sum(int a, int b);
     }
 }
