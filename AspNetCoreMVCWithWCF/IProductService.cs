@@ -11,7 +11,7 @@ namespace AspNetCoreMVCWithWCF
     public interface IProductService
     {
         [OperationContract]
-        Product finc();
+        Product find();
 
         [OperationContract]
         List<Product> findAll();
