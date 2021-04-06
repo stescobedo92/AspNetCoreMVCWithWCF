@@ -7,12 +7,21 @@ using System.Text;
 
 namespace AspNetCoreMVCWithWCF
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "DemoService" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select DemoService.svc or DemoService.svc.cs at the Solution Explorer and start debugging.
     public class DemoService : IDemoService
     {
-        public void DoWork()
+        public string Hello()
         {
+            return "First WCF service";
+        }
+
+        public string Hi(string name)
+        {
+            return "Hi " + name;
+        }
+
+        public int Sum(int a, int b)
+        {
+            return (a + b);
         }
     }
 }
