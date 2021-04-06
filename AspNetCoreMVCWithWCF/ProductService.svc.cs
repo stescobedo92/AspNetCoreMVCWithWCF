@@ -18,10 +18,10 @@ namespace AspNetCoreMVCWithWCF
         {
             return new List<Product>
             {
-                new Product { Id = "p01", Name = "Product 1", Price = 123 };
-                new Product { Id = "p02", Name = "Product 2", Price = 124 };
-                new Product { Id = "p03", Name = "Product 3", Price = 125 };
-            }
+                new Product { Id = "p01", Name = "Product 1", Price = 123 },
+                new Product { Id = "p02", Name = "Product 2", Price = 124 },
+                new Product { Id = "p03", Name = "Product 3", Price = 125 }
+            };
         }
     }
 }
